@@ -20,7 +20,7 @@ print(x)
 pareizi_cipari = 0
 
 while True:
-    minejums = input("Atmini 4 ciparu kodu!: ")
+    minejums = input(f"Atmini 4 ciparu kodu!: ")
     if minejums.lower() == "stop":
         break
     elif x == minejums:
@@ -31,6 +31,11 @@ while True:
             kods.append(randint(0,9))
         x = "".join(str(num) for num in kods)
     else:
+        
+        a = list(minejums)
+        if a[0] == kods[0]:
+           pareizi_cipari = pareizi_cipari + 1 
+
         print(f"Pareizi novietoti ir {pareizi_cipari} cipari no 4")
         minejumu_skaits += 1
 print("Paldies par spēlēšanu!")
