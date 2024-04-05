@@ -4,6 +4,10 @@ from colorama import Fore
 kods=[]
 n=4
 
+#Noteikumi
+print(Fore.LIGHTYELLOW_EX + "Spēlē tev ir jāatmin 4 ciparu kods. ir pateikts cik cipari ir pareizā vietā un beigās minējumu skaits kad tu uzmini kodu. Kad tu to uzmini, ir jauns kods kuru atkal ir jāmin. ")
+print("Lai beigtos spēle, uzraksti 'Stop'"+ Fore.RESET)
+
 #For funkcija kas pievieno kodam četras nejauši izvēlētas vērtības vērtības
 for i in range(n):
     kods.append(randint(0,9))
@@ -27,7 +31,7 @@ while True:
         break
     elif x == minejums:
         print(Fore.GREEN + "Pareizi!")
-        print(f"Tu uzminēji kodu {minejumu_skaits} minējumā/os!")
+        print(f"Tu uzminēji kodu {minejumu_skaits} minējumā/os! Turpini minēt jaunu skaitli:")
         for i in range(n):
             kods.clear()
             kods.append(randint(0,9))
