@@ -1,5 +1,5 @@
 from random import randint #Random Integer
-from colorama import Fore
+from colorama import Fore, Back, Style
 
 kods=[]
 n=4
@@ -49,4 +49,4 @@ while True:
 
         print(Fore.MAGENTA + f"Pareizi novietoti ir {pareizi_cipari} cipari no 4")
         minejumu_skaits += 1
-print(Fore.YELLOW + "Paldies par spēlēšanu!")
+print(Fore.YELLOW + Style.BRIGHT + Back.RED + "Paldies par spēlēšanu!" + Fore.RESET + Style.NORMAL + Back.RESET)
