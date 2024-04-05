@@ -19,7 +19,7 @@ minejumu_skaits = 1
 x = "".join(str(num) for num in kods)
 
 #Testēšanas nolūkam, iedots pirmais kods
-print(x)
+# print(x)
 
 while True:
     minejums = input(Fore.BLUE + f"Atmini 4 ciparu kodu!: ")
