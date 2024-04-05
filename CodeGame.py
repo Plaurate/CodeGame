@@ -12,10 +12,6 @@ print("Lai beigtos spēle, uzraksti 'Stop'"+ Fore.RESET)
 for i in range(n):
     kods.append(randint(0,9))
 
-#Pārvērš vērtības sarakstā par string tālākai lietošanai
-string_kods = [str(element) for element in kods]
-# Pārbauda kāds kods tiek printēts
-# print(*kods)
 
 minejumu_skaits = 1
 
@@ -23,7 +19,7 @@ minejumu_skaits = 1
 x = "".join(str(num) for num in kods)
 
 #Testēšanas nolūkam, iedots pirmais kods
-# print(x)
+print(x)
 
 while True:
     minejums = input(Fore.BLUE + f"Atmini 4 ciparu kodu!: ")
@@ -38,7 +34,8 @@ while True:
         x = "".join(str(num) for num in kods)
     else:
         a = list(minejums)
-
+        #Pārvērš vērtības sarakstā par string tālākai lietošanai
+        string_kods = [str(element) for element in kods]
         def cipari(saraksts1, saraksts2):
             pareizi = 0
             for item1, item2 in zip(saraksts1, saraksts2):
